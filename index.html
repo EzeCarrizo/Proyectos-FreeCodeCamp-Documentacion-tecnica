@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Documentación Técnica</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+    <header>Documentación sobre JS</header>
+    <a class="nav-link" href="#Introduccion">Introduccion</a>
+    
+    <a class="nav-link" href="#Prerrequisitos">Prerrequisitos</a>
+    
+    <a class="nav-link" href="#Javascript_y_Java">Javascript y Java</a>
+    
+    <a class="nav-link" href="#Hola_mundo">Hola Mundo</a>
+    
+    <a class="nav-link" href="#Conceptos_Basicos">Conceptos Basicos</a>  
+    
+    <a class="nav-link" href="#Variables">Variables</a>
+      
+    <a class="nav-link" href="#Evaluar_Variables">Evaluar Variables</a>
+  
+  </nav>
+  
+  <main id="main-doc">
+    <section  class="main-section" id="Introduccion">
+    <header>Introduccion</header>
+      <p>JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat JavaScript es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa (por ejemplo programación funcional). Lee más en acerca de JavaScript.
+
+Esta sección está dedicada al lenguaje JavaScript en sí, y no a las partes que son específicas de las páginas web u otros entornos host. Para información acerca de APIs específicas para páginas Web, consulta APIs Web y DOM.
+
+El estándar para JavaScript es ECMAScript (ECMA-262) y la especificación de la API para la Internacionalización de ECMAScript (ECMA-402). La documentación en MDN está basada enteramente en las últimas versiones preliminares de ECMA-262 y ECMA-402. Y en algunos casos donde algunas propuestas para nuevas funciones para ECMAScript ya hayan sido implementadas en los navegadores, la documentación y algunos artículos de MDN pueden hacer uso de algunas de estas funciones.
+
+No confundas JavaScript con el lenguaje de programación Java. Ambos "Java" y "JavaScript" son marcas o marcas registradas de Oracle en los Estados Unidos y otros países, Sin embargo, los dos lenguajes de programación tienen sintaxis, semántica y usos muy diferentes.</p>
+    </section>
+
+    <section class="main-section" id="Prerrequisitos">
+      <header>Prerrequisitos</header>
+      <p>Se puede decir que JavaScript es más difícil de aprender que tecnologías relacionadas como HTML y CSS. Antes de intentar aprender JavaScript, se recomienda encarecidamente que te familiarices con al menos estas dos tecnologías primero, y quizás también con otras. Comienza trabajando con los siguientes módulos:</p>
+      <ul>
+        <li>Comenzando con la Web</li>
+        <li>Introducción a HTML</li>
+        <li>Introducción a CSS</li>
+      </ul>
+<p>Tener experiencia previa con otros lenguajes de programación también puede ayudar.</p>
+<p>Después de familiarizarte con los conceptos básicos de JavaScript, deberías estar en condiciones de aprender sobre temas más avanzados, por ejemplo:</p>
+      <ul>
+        <li>JavaScript en profundidad, como se enseña en nuestra guía de JavaScript</li>
+        <li>APIs web</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Javascript_y_Java">
+      <header>Javascript y Java</header>
+      <p>JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en otros. El lenguaje JavaScript se parece a Java, pero no tiene el tipado estático ni la fuerte verificación de tipos de Java. JavaScript sigue la mayoría de la sintaxis de las expresiones de Java, convenciones de nomenclatura y construcciones de control de flujo básicas, razón por la cual se cambió el nombre de LiveScript a JavaScript.</p>
+
+<p>A diferencia del sistema de clases en tiempo de compilación de Java creado por declaraciones, JavaScript admite un sistema de tiempo de ejecución basado en una pequeña cantidad de tipos de datos que representan valores numéricos, booleanos y de cadena. JavaScript tiene un modelo de objetos basado en prototipos en lugar del modelo de objetos basado en clases más común. El modelo basado en prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar en objetos individuales. JavaScript también admite funciones sin requisitos declarativos especiales. Las funciones pueden ser propiedades de objetos, ejecutándose como métodos débilmente tipados.</p>
+
+<p>JavaScript es un lenguaje de forma muy libre en comparación con Java. No es necesario declarar todas las variables, clases y métodos. No tienes que preocuparte por si los métodos son públicos, privados o protegidos, y no tienes que implementar interfaces. Las variables, los parámetros y los tipos de retorno de función no se tipifican explícitamente.</p>
+
+<p>Java es un lenguaje de programación basado en clases diseñado para una ejecución rápida y con seguridad de tipos. La seguridad de tipos significa, por ejemplo, que no puedes convertir un entero de Java en una referencia de objeto o acceder a la memoria privada corrompiendo el código de bytes de Java. El modelo basado en clases de Java significa que los programas constan exclusivamente de clases y sus métodos. La herencia de clases de Java y la tipificación fuerte generalmente requieren jerarquías de objetos estrechamente acopladas. Estos requisitos hacen que la programación Java sea más compleja que la programación JavaScript.</p>
+
+<p>Por el contrario, JavaScript desciende en espíritu de una línea de lenguajes más pequeños de tipado dinámico como HyperTalk y dBASE. Estos lenguajes de «scripting» ofrecen herramientas de programación a una audiencia mucho más amplia debido a su sintaxis más sencilla, funcionalidad especializada incorporada y requisitos mínimos para la creación de objetos.</p>
+    </section>
+                  
+    <section class="main-section" id="Hola_mundo">
+      <header>Hola mundo</header>
+      <p>Para comenzar a escribir JavaScript, abre la Consola web en modo multilínea y escribe tu primer código "Hola mundo" en JavaScript:</p>
+      <code>
+        <p>(function(){</p>
+        <p>"use strict";</p>
+        <p>/* Inicio de tu código */</p>
+        <p>function greetMe(tuNombre) {</p>
+        <p>alert('Hola ' + tuNombre);</p>
+        }
+
+        <p>greetMe('Mundo');</p>
+        <p>/* Fin de tu código */</p>
+        <p>})();</p>
+      </code>
+      <code></code>
+      <p></p>
+    </section> 
+    
+    <section class="main-section" id="Conceptos_Basicos">
+      <header>Conceptos Basicos</header>
+      <p>JavaScript está influenciado sobre todo por la sintaxis de Java, C y C++, pero también ha sido influenciado por Awk, Perl y Python.</p>
+
+<p>JavaScript distingue entre mayúsculas y minúsculas (es case-sensitive) y utiliza el conjunto de caracteres Unicode. Por ejemplo, la palabra «Früh» (que significa "temprano" en Alemán) se podría usar como el nombre de una variable</p>
+      <code>let Früh = "foobar"</code>
+      <p>Pero, la variable früh no es la misma que Früh porque JavaScript distingue entre mayúsculas y minúsculas.</p>
+
+<p>En JavaScript, las instrucciones se denominan declaraciones y están separadas por punto y coma (;).</p>
+
+<p>No es necesario un punto y coma después de una declaración si está escrita en su propia línea. Pero si se deseas más de una declaración en una línea, entonces debes separarlas con punto y coma.</p>
+
+<p>Sin embargo, se considera una buena práctica escribir siempre un punto y coma después de una declaración, incluso cuando no sea estrictamente necesario. Esta práctica reduce las posibilidades de que se introduzcan errores en el código.</p>      
+    </section>
+    
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Utiliza variables como nombres simbólicos para valores en tu aplicación. Los nombres de las variables, llamados identificadores, se ajustan a ciertas reglas.</p>
+
+<p>Un identificador de JavaScript debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($). Los siguientes caracteres también pueden ser dígitos (0-9).</p>
+
+<p>Dado que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres "A" a "Z" (mayúsculas), así como "a" a "z" (minúsculas).</p>
+
+<p>Puedes utilizar la mayoría de las letras ISO 8859-1 o Unicode como å y ü en los identificadores. (Para obtener más detalles, consulta esta publicación del blog). También puedes usar Secuencias de escape Unicode como caracteres en identificadores.</p>
+
+<p>Algunos ejemplos de nombres legales son Number_hits, temp99, $credit y _name.</p>
+      <section class="main-section" id="Evaluar_Variables">
+      <header>Evaluar Variables</header>
+      <p>Una variable declarada usando la instrucción var o let sin un valor asignado especificado tiene el valor de undefined.</p>
+
+<p>Un intento de acceder a una variable no declarada da como resultado el disparo de una excepción ReferenceError:</p>
+      <code>
+        <p>var a;</p>
+        <p>console.log('El valor de a es ' + a); // El valor de a es undefined</p>
+
+        <p>console.log('El valor de b es ' + b); // El valor de b es undefined
+          var b;</p>
+        <p>// Esto puede desconcertarte hasta que leas 'Elevación de variable' a continuación</p>
+
+        <p>console.log('El valor de c es ' + c); // Error de referencia no detectado: c no está definida</p>
+
+        <p>let x;</p>
+        <p>console.log('El valor de x es ' + x); // El valor de x es undefined</p>
+
+        <p>console.log('El valor de y es ' + y); // Error de referencia no detectada: y no está definida</p>
+        <p>let y;</p>
+      </code>
+      <p>Puedes usar undefined para determinar si una variable tiene un valor. En el siguiente código, a la variable input no se le asigna un valor y la declaración if evalúa a true.</p>
+      <code>
+        <p>var input;</p>
+        <p>if (input === undefined) {</p>
+        <p>doThis();</p>
+        <p>} else {</p>
+        <p>doThat();</p>
+        <p>}</p>
+      </code>
+    </section>
+
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
